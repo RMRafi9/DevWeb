@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    background: none;
+    width: 100%;
+   
+}
+.container {
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+    transition: background 0.3s;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+#mode-toggle:checked ~ .container {
+    background: black;
+}
+header{
+    background:black;
+    color: white;
+    width: 100%;
+    border-bottom: solid;
+    font-weight: bold;
+    font-size: 20px;
+    border-color: orange;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+fieldset{
+    width: 100px;
+    padding: 20px 400px;
+    margin-top: 60px;
+}
+label{
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 40px;
+    box-shadow: 1px 1px;
+}
+button{
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background 0.15s;
+}
+button:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+.toggle-btn {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 28px;
+    background: #eee;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    display: inline-block;
+    transition: background 0.3s;
+}
+.toggle-btn::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: #333;
+    border-radius: 50%;
+    margin: 2px;
+    transition: transform 0.3s, background 0.3s;
+}
+/* Toggle effect: swap header/body colors */
+#mode-toggle:checked ~ .container header {
+    background: white;
+    color: black;
+}
+#mode-toggle:checked ~ .container header .toggle-btn {
+    background: #222;
+    border-color: #888;
+}
+#mode-toggle:checked ~ .container header .toggle-btn::before {
+    background: #fff;
+    transform: translateX(20px);
+}
+#mode-toggle:checked ~ .container fieldset,
+#mode-toggle:checked ~ .container button {
+    background: #222;
+    color: #fff;
+}
+#mode-toggle:checked ~ .container button {
+    background: #fff;
+    color: #222;
+    border: 1px solid #222;
+}

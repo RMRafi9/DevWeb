@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'Inscription pour un Workshop</title>
+    <link
+      rel="stylesheet"
+      href="Formulaire d'Inscription pour un Workshop.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="Logo.jpg" alt="" />
+    </header>
+
+    <div class="container">
+      <h2>Inscription au Workshop</h2>
+      <form action="">
+        <label for="name">Nom Complet</label>
+        <input type="text" id="name" name="name" required />
+        <label for="name">Email</label>
+        <input type="text" id="email" name="email" required />
+        <label for="name">Telephone</label>
+        <input type="text" id="phone" name="phone" required />
+        <label for="select">Organisation / Entreprise</label>
+        <input type="text" id="select" name="select" required />
+        <label for="session">Select votre session</label>
+        <select name="session" id="session">
+          <option value="select">--Select--</option>
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+        <button class="button" type="submit">S'inscrire</button>
+      </form>
+    </div>
+    <footer><p>&copy;2025 - Workshop Tech</p></footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'Inscription pour un Workshop</title>
+    <link rel="stylesheet" href="Foemulaire de Paiement en Ligne.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="Logo.jpg" alt="" />
+      <h2 class="title">Python Masteclass</h2>
+      <p>Subscribe NOW!!!!!</p>
+    </header>
+
+    <div class="container">
+      <form action="">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="name">Email</label>
+        <input type="text" id="email" name="email" required />
+        <label>Payment Method</label>
+        <div class="payment-methods">
+          <input
+            type="radio"
+            id="mastercard"
+            name="payment"
+            value="mastercard"
+            required
+          />
+          <label for="mastercard" class="payment-label">
+            <img src="Mastercard.jpg" alt="Mastercard" class="payment-img" />
+            <span>Mastercard</span>
+          </label>
+          <input type="radio" id="paypal" name="payment" value="paypal" />
+          <label for="paypal" class="payment-label">
+            <img src="Paypal.jpg" alt="PayPal" class="payment-img" />
+            <span>PayPal</span>
+          </label>
+          <input type="radio" id="visa" name="payment" value="visa" />
+          <label for="visa" class="payment-label">
+            <img src="Visa.jpg" alt="Visa" class="payment-img" />
+            <span>Visa</span>
+          </label>
+        </div>
+        <label for="name">Card Number</label>
+        <input type="text" id="phone" name="phone" required />
+        <label for="date">Expiration Date</label>
+        <input
+          type="text"
+          id="date"
+          placeholder="MM/YY"
+          style="font-size: 20px"
+        />
+        <label for="session">CVV:</label>
+        <input type="text" id="session" />
+
+        <button class="button" type="submit">S'inscrire</button>
+      </form>
+    </div>
+    <footer><p>&copy;2025 - Workshop Tech</p></footer>
+  </body>
+</html>
